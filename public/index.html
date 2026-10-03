@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Siddharth Suri</title>
+        <meta
+            name="description"
+            content="Siddharth Suri: CS undergrad building backend systems and web apps."
+        />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Ctext y=%2713%27 font-size=%2714%27 font-family=%27monospace%27%3E~%3C/text%3E%3C/svg%3E"
+        />
+        <link rel="stylesheet" href="/style.css" />
+        <script src="/theme.js"></script>
+        <script src="/landscape.js" defer></script>
+    </head>
+    <body>
+        <header class="top">
+            <a class="brand" href="/">~/siddharth</a>
+            <nav>
+                <a href="/support.html">support</a>
+                <span class="themes" role="group" aria-label="Theme">
+                    <button type="button" data-set-theme="light">light</button>
+                    <button type="button" data-set-theme="reader">
+                        reader
+                    </button>
+                    <button type="button" data-set-theme="dark">dark</button>
+                </span>
+            </nav>
+        </header>
+
+        <main>
+            <div class="hero">
+                <h1>Siddharth Suri</h1>
+                <p class="muted tags">
+                    <span>cs undergrad</span> <span>delhi</span>
+                </p>
+            </div>
+
+            <div class="scene" aria-hidden="true">
+                <div id="sky"></div>
+                <pre id="land"></pre>
+            </div>
+
+            <section class="intro">
+                <div>
+                    <h2>About</h2>
+                    <p>
+                        I'm a computer science undergrad graduating in 2027. I
+                        like building systems from the ground up, whether that
+                        be backend, frontend or complete end to end
+                        applications.
+                    </p>
+                    <p>
+                        I've also been getting into embedded systems as of late.
+                        I previously interned as a software developer at Koliath
+                        Technologies, working on a React monorepo and tuning SQL
+                        queries.
+                    </p>
+                    <p>
+                        I am open to any internship offerings, jobs or any other
+                        collaborative opportunities.
+                    </p>
+                    <ul class="skills muted tags">
+                        <li>
+                            <span>typescript</span> <span>javascript</span>
+                            <span>c++</span> <span>sql</span>
+                            <span>react</span> <span>next.js</span>
+                            <span>tailwind</span>
+                        </li>
+                        <li>
+                            <span>node.js</span> <span>express</span>
+                            <span>prisma</span> <span>postgres</span>
+                            <span>mongodb</span> <span>redis</span>
+                            <span>docker</span> <span>git</span>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="links">
+                    <li>
+                        <a
+                            href="https://github.com/Siddharth-Suri/"
+                            target="_blank"
+                            rel="noopener"
+                            >github</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.linkedin.com/in/siddharth-suri-/"
+                            target="_blank"
+                            rel="noopener"
+                            >linkedin</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://leetcode.com/actuallysid05"
+                            target="_blank"
+                            rel="noopener"
+                            >leetcode</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/resume.pdf" target="_blank" rel="noopener"
+                            >resume</a
+                        >
+                    </li>
+                    <li>
+                        <a href="mailto:siddharthsuri.work2005@gmail.com"
+                            >email</a
+                        >
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Projects</h2>
+                <ul class="projects">
+                    <li>
+                        <a
+                            href="https://github.com/Siddharth-Suri/Bit-Proxy"
+                            target="_blank"
+                            rel="noopener"
+                            >[bitproxy]</a
+                        >
+                        <p>
+                            A reverse proxy built from scratch on Node's http
+                            module, with token-bucket rate limiting, weighted
+                            round-robin load balancing and health-checked
+                            failover.
+                        </p>
+                        <p class="muted tags">
+                            <span>typescript</span> <span>node.js</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/Siddharth-Suri/Hermit"
+                            target="_blank"
+                            rel="noopener"
+                            >[hermit]</a
+                        >
+                        <p>
+                            Real-time multi-room chat over WebSockets, with
+                            Redis rate limiting and automatic cleanup of idle
+                            rooms.
+                        </p>
+                        <p class="muted tags">
+                            <span>next.js</span> <span>websockets</span>
+                            <span>redis</span> <span>prisma</span>
+                            <span>postgresql</span>
+                        </p>
+                    </li>
+                    <li>
+                        <a
+                            href="https://newssifyy.vercel.app/"
+                            target="_blank"
+                            rel="noopener"
+                            >[newssifyy]</a
+                        >
+                        <p>
+                            A lightweight news aggregator with recursively
+                            rendered comment threads and client-side pagination.
+                        </p>
+                        <p class="muted tags">
+                            <span>react</span> <span>typescript</span>
+                            <span>tailwindcss</span> <span>recoil</span>
+                        </p>
+                    </li>
+                </ul>
+                <details class="more">
+                    <summary aria-label="Toggle more projects"></summary>
+                    <ul class="projects">
+                        <li>
+                            <span>[tempo]</span>
+                            <p>
+                                A Chrome extension that quietly tracks time
+                                spent on each site, pausing when you step away,
+                                with an insights dashboard.
+                            </p>
+                            <p class="muted tags">
+                                <span>javascript</span>
+                                <span>chrome extensions</span>
+                            </p>
+                        </li>
+                    </ul>
+                </details>
+            </section>
+        </main>
+
+        <footer>
+            <span>© 2026 Siddharth Suri</span>
+            <a href="/support.html">support my projects →</a>
+        </footer>
+    </body>
+</html>
