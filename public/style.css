@@ -322,13 +322,9 @@ footer {
     border-color: var(--accent);
     color: var(--accent);
 }
-.pay button:disabled {
-    opacity: 0.5;
-    cursor: default;
-}
-#status {
-    min-height: 1.65em;
+.hint {
     margin-top: 16px;
+    font-size: 13px;
 }
 
 @media (max-width: 480px) {
