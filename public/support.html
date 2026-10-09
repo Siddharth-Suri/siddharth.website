@@ -38,7 +38,7 @@
                 of mine saved you time, you can chip in to keep it maintained.
             </p>
 
-            <form id="pay-form">
+            <div id="pay-form">
                 <div class="amounts" role="group" aria-label="Preset amount">
                     <button type="button" data-amount="5">$5</button>
                     <button type="button" data-amount="10">$10</button>
@@ -56,13 +56,19 @@
                         value="10"
                         required
                     />
-                    <button type="submit">support</button>
+                    <a
+                        id="pay-link"
+                        href="https://paypal.me/siddharthsuri5/10USD"
+                        target="_blank"
+                        rel="noopener"
+                        >support</a
+                    >
                 </div>
                 <p class="muted hint">
                     Opens PayPal in a new tab. Cards work without a PayPal
                     account.
                 </p>
-            </form>
+            </div>
         </main>
 
         <footer>

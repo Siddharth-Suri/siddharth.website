@@ -294,7 +294,7 @@ footer {
 }
 .amounts button,
 .pay input,
-.pay button {
+.pay a {
     font: inherit;
     color: var(--fg);
     background: none;
@@ -317,10 +317,14 @@ footer {
 .pay input {
     width: 10ch;
 }
-.pay button {
-    cursor: pointer;
+.pay a {
     border-color: var(--accent);
     color: var(--accent);
+}
+.pay a:hover {
+    background: var(--accent);
+    color: var(--bg);
+    text-decoration: none;
 }
 .hint {
     margin-top: 16px;

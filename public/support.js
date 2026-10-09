@@ -1,25 +1,26 @@
-// Sends supporters to PayPal.me with the chosen amount filled in; PayPal handles the payment.
+// Keeps the support link pointing at PayPal.me with the chosen amount. It's a real link rather
+// than window.open, so popup blockers and in-app browsers don't stop it.
 (() => {
     const PAYPAL_ME = "https://paypal.me/siddharthsuri5";
-    const form = document.getElementById("pay-form");
     const input = document.getElementById("amount");
-    const presets = form.querySelectorAll("[data-amount]");
+    const link = document.getElementById("pay-link");
+    const presets = document.querySelectorAll("[data-amount]");
 
-    const syncPresets = () =>
+    const sync = () => {
+        link.href = `${PAYPAL_ME}/${Number(input.value)}USD`;
         presets.forEach((b) =>
             b.setAttribute("aria-pressed", b.dataset.amount === input.value)
         );
+    };
     presets.forEach((b) =>
         b.addEventListener("click", () => {
             input.value = b.dataset.amount;
-            syncPresets();
+            sync();
         })
     );
-    input.addEventListener("input", syncPresets);
-    syncPresets();
-
-    form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        window.open(`${PAYPAL_ME}/${Number(input.value)}USD`, "_blank", "noopener");
+    input.addEventListener("input", sync);
+    link.addEventListener("click", (e) => {
+        if (!input.reportValidity()) e.preventDefault();
     });
+    sync();
 })();
